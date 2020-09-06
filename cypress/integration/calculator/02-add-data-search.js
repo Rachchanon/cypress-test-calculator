@@ -8,8 +8,8 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    // cy.visit('https://test-cal.herokuapp.com/')
-    cy.visit('https://test-cal.herokuapp.com/');
+    cy.visit('https://test-cal.herokuapp.com/')
+    // cy.visit('http://localhost:3000/');
   });
 
   describe('เพิ่มข้อมูลไว้ใช้ทดสอบ Result จากการค้นหา', function () {
@@ -21,6 +21,7 @@ context('Actions', () => {
       cy.get('#A .num1').click();
       cy.get('#A .btn-plus').click();
       cy.get('#A .btn-result').click();
+      cy.wait(1000)
 
       // +0..2+3555.0.2
       cy.get('#A .btn-plus').click();
@@ -38,38 +39,43 @@ context('Actions', () => {
       cy.get('#A .btn-dot').click();
       cy.get('#A .num2').click();
       cy.get('#A .btn-result').click();
+      cy.wait(1000)
 
-      // cy.get('#B .btn-minus').click();
-      // cy.get('#B .num7').click();
-      // cy.get('#B .btn-dot').click();
-      // cy.get('#B .num2').click();
-      // cy.get('#B .num3').click();
-      // cy.get('#B .num9').click();
-      // cy.get('#B .btn-minus').click();
-      // cy.get('#B .btn-minus').click();
-      // cy.get('#B .btn-minus').click();
-      // cy.get('#B .num5').click();
-      // cy.get('#B .btn-dot').click();
-      // cy.get('#B .btn-result').click();
+      // // -7.239---5.
+      cy.get('#B .btn-minus').click();
+      cy.get('#B .num7').click();
+      cy.get('#B .btn-dot').click();
+      cy.get('#B .num2').click();
+      cy.get('#B .num3').click();
+      cy.get('#B .num9').click();
+      cy.get('#B .btn-minus').click();
+      cy.get('#B .btn-minus').click();
+      cy.get('#B .btn-minus').click();
+      cy.get('#B .num5').click();
+      cy.get('#B .btn-dot').click();
+      cy.get('#B .btn-result').click();
+      cy.wait(1000)
 
-      // cy.get('#B .num1').click();
-      // cy.get('#B .num0').click();
-      // cy.get('#B .num0').click();
-      // cy.get('#B .num0').click();
-      // cy.get('#B .btn-multiply').click();
-      // cy.get('#B .btn-dot').click();
-      // cy.get('#B .num3').click();
-      // cy.get('#B .btn-multiply').click();
-      // cy.get('#B .btn-multiply').click();
-      // cy.get('#B .num2').click();
-      // cy.get('#B .btn-result').click();
-      // cy.get('#B .btn-clear').click();
-      // cy.get('#B .btn-multiply').click();
-      // cy.get('#B .num5').click();
-      // cy.get('#B .btn-dot').click();
-      // cy.get('#B .btn-plus').click();
-      // cy.get('#B .num2').click();
-      // cy.get('#B .btn-result').click();
+      // // 1000*.3**C1*5.+2
+      cy.get('#B .num1').click();
+      cy.get('#B .num0').click();
+      cy.get('#B .num0').click();
+      cy.get('#B .num0').click();
+      cy.get('#B .btn-multiply').click();
+      cy.get('#B .btn-dot').click();
+      cy.get('#B .num3').click();
+      cy.get('#B .btn-multiply').click();
+      cy.get('#B .btn-multiply').click();
+      cy.get('#B .num2').click();
+      cy.get('#B .btn-result').click();
+      cy.get('#B .btn-clear').click();
+      cy.get('#B .btn-multiply').click();
+      cy.get('#B .num5').click();
+      cy.get('#B .btn-dot').click();
+      cy.get('#B .btn-plus').click();
+      cy.get('#B .num2').click();
+      cy.get('#B .btn-result').click();
+      cy.wait(1000)
     });
   });
 

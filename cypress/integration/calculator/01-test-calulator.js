@@ -8,8 +8,8 @@
 
 context('Actions', () => {
   beforeEach(() => {
-    // cy.visit('https://test-cal.herokuapp.com/')
-    cy.visit('https://test-cal.herokuapp.com/');
+    cy.visit('https://test-cal.herokuapp.com/')
+    // cy.visit('http://localhost:3000/');
   });
 
   describe('ทดสอบการบวก', function () {
