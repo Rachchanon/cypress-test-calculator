@@ -1,0 +1,14 @@
+{
+  "name": "cypress-cal",
+  "version": "1.0.0",
+  "description": "test front-end calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^5.1.0"
+  }
+}
